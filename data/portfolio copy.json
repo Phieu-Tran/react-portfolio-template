@@ -1,36 +1,36 @@
 {
-  "name": "Chetan",
+  "name": "PhucHieu_Tran",
   "headerTaglineOne": "Hello 👋",
-  "headerTaglineTwo": "I'm Chetan Verma - curious",
-  "headerTaglineThree": "designer and devloper",
-  "headerTaglineFour": " based in New Delhi, India.",
+  "headerTaglineTwo": "I'm Tran Phuc Hieu - IT",
+  "headerTaglineThree": "IT Operations & Solutions Engineer",
+  "headerTaglineFour": " Working and living in Vietnam.",
   "showBlog": true,
   "darkMode": true,
   "socials": [
     {
       "id": "1",
       "title": "Github",
-      "link": "https://github.com/chetanverma16"
+      "link": ""
     },
     {
       "id": "2",
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/chetanverma7/"
+      "link": "https://www.linkedin.com/in/tr%E1%BA%A7n-ph%C3%BAc-hi%E1%BA%BFu-3987b2285/"
     },
     {
       "id": "3",
-      "title": "Twitter",
-      "link": "https://twitter.com/realchetanverma"
+      "title": "Upwork",
+      "link": "https://www.upwork.com/freelancers/~0148b052d7c0beda20?mp_source=share"
     },
-    { "id": "4", "title": "Blog", "link": "https://blog.chetanverma.com/" },
-    { "id": "5", "title": "Email", "link": "mailto:hello@chetanverma.com" }
+    { "id": "4", "title": "Blog", "link": "" },
+    { "id": "5", "title": "Email", "link": "mailto:phuchieu.work@gmail.com" }
   ],
   "projects": [
     {
       "id": "1",
       "title": "Project One Test",
       "description": "Web Design",
-      "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "imageSrc": "/images/hinh1.png",
       "url": "http://chetanverma.com/"
     },
     {

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -47,7 +47,6 @@ export default function Home() {
       { y: 0, x: 0, transform: "scale(1)" }
     );
   }, []);
-  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -104,15 +103,7 @@ export default function Home() {
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
-                onClick={() => {
-                  console.log("Clicked:", project.url); // Kiểm tra sự kiện click
-                  if (project.url.endsWith(".pdf")) {
-                    setSelectedProject(project.url);
-                    console.log("PDF set:", project.url); // Kiểm tra state được cập nhật
-                  } else {
-                    window.open(project.url);
-                  }
-                }}
+                onClick={() => window.open(project.url)}
               />
             ))}
           </div>
@@ -144,35 +135,6 @@ export default function Home() {
             {data.aboutpara}
           </p>
         </div>
-        {selectedProject && (
-  <div
-    className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black/80"
-    onClick={() => setSelectedProject(null)} // Click ngoài để đóng
-  >
-    {/* Đặt nút Đóng trong một div riêng có z-index cao */}
-    <div className="relative w-full flex justify-center">
-      <button
-        onClick={(e) => {
-          e.stopPropagation(); // Ngăn chặn click lan ra ngoài
-          setSelectedProject(null);
-        }}
-        className="absolute top-4 right-4 text-white bg-red-500 px-4 py-2 rounded"
-        style={{ zIndex: 1001 }} // Đảm bảo nút nằm trên iframe
-      >
-        Đóng PDF
-      </button>
-    </div>
-
-    {/* Hiển thị PDF */}
-    <iframe
-      src={selectedProject}
-      width="80%"
-      height="80%"
-      className="mt-4"
-      style={{ border: "none", zIndex: 1000, position: "relative" }}
-    />
-  </div>
-)}
         <Footer />
       </div>
     </div>
